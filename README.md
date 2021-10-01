@@ -1,4 +1,4 @@
-#### To Find how many ReplicaSets exist on the system
+#### To find how many ReplicaSets exist on the system
 
 ```
 root@controlplane:~# kubectl get replicaset
@@ -41,7 +41,7 @@ root@controlplane:~# kubectl get rs
 NAME              DESIRED   CURRENT   READY   AGE
 new-replica-set   4         4         0   
 ```
-####To find suitable version for Replicaset
+#### To find suitable version for Replicaset
 
 ```
 kubectl explain replicaset | grep VERSION
@@ -62,14 +62,14 @@ root@controlplane:~# kubectl delete replicaset replicaset-1
 replicaset.apps "replicaset-1" deleted
 ```
 
-#### For Editing replcate set
+#### For editing replcate set
 
 ```
 root@controlplane:~# kubectl edit replicaset new-replica-set
 replicaset.apps/new-replica-set edited
 ```
 
-####For Scaling replcaset 
+#### For scaling replcaset 
 
 ```
 kubectl edit replicaset new-replica-set
